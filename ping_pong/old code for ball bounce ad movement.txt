@@ -1,0 +1,26 @@
+if (ballX+ball_speedX>12.5 || ballX+ball_speedX<(640-12.5)) {
+        ballX+=ball_speedX;
+    } else {
+        if (ballX+ball_speedX<12.5) {
+            ballX=12.5;
+            bounceX();
+        }
+        if (ballX+ball_speedX>640-12.5) {
+            ballX=640-12.5;
+            bounceX();
+        }
+    }
+    //Y
+    if (ballY+ball_speedY>12.5 || ballY+ball_speedY<(640-12.5)) {
+        ballY+=ball_speedY;
+    } else {
+        if (ballY+ball_speedY<12.5) {
+            ballY=12.5;
+            bounceY();
+        } else {
+            ballY=640-12.5;
+            bounceY();
+        }
+    }
+
+b and m 30 flapjacks for £11
