@@ -1,3 +1,6 @@
+import processing.sound.*;
+SoundFile walltop,wallbottom,floor,bat;
+
 float ballX;     // Position of text along x-axis
 float ballY;     // Position of text along x-axis
 float brectX;
@@ -19,6 +22,7 @@ int tick_batA=-1;
 int tick_batB=-1;
 float difficulty=0.3; //this is a value from 0 to 1
 
+
 void keyReleased(){
     
 }
@@ -28,7 +32,7 @@ void keyReleased(){
 void setup()
 {
     
-    
+    frameRate(60);
     size(640, 480);
     fill(255, 177, 8);
     textSize(48);
