@@ -1,5 +1,5 @@
-import processing.sound.*;
-SoundFile walltop,wallbottom,floor,bat;
+//import processing.sound.*;
+//SoundFile walltop,wallbottom,floor,bat;
 
 float ballX;     // Position of text along x-axis
 float ballY;     // Position of text along x-axis
@@ -20,7 +20,7 @@ float paddleA_travel=0;
 float paddleB_travel=0;
 int tick_batA=-1;
 int tick_batB=-1;
-float difficulty=0.3; //this is a value from 0 to 1
+float difficulty=0.25; //this is a value from 0 to 1
 
 
 void keyReleased(){
@@ -39,7 +39,7 @@ void setup()
 
     ballX = 500;  // Initialise x coord
     ballY = 300; //Init y coord
-    ball_speedX=1;
+    ball_speedX=5;
     ball_speedY=0;
     tick=0;
     ball_diameter=25;
