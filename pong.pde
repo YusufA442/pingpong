@@ -21,6 +21,8 @@ float paddleB_travel=0;
 int tick_batA=-1;
 int tick_batB=-1;
 float difficulty=0.25; //this is a value from 0 to 1
+float lowSpinB = -0.5;
+float highSpinB = 1.5;
 
 
 void keyReleased(){
@@ -100,7 +102,7 @@ void ball() {
     if (ball_paddleB_dist_X<=12.5 && ballY+(ball_diameter/2)>brectY && ballY<brectY+100-(ball_diameter/2)) {
         ballX=617.5;//move ball out of racket, so we don't have weird clipping movement
         bounceX();
-        paddleB_travel+=random(-5, 5);
+        paddleB_travel+=random(lowSpinB, highSpinB);//this is the spin on the ball
         tick_batB=-1;
         ball_speedY+=paddleB_travel;
         if (ball_speedY>6) {
@@ -178,6 +180,9 @@ void draw()
     
     if (tick==15) {
         tick=0;
+    }
+    if (point < 0 || point > 10) {
+      exit();
     }
     background(25);
     text(point, 44, 44);
