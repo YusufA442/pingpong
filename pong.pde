@@ -20,9 +20,9 @@ float paddleA_travel=0;
 float paddleB_travel=0;
 int tick_batA=-1;
 int tick_batB=-1;
-float difficulty=0.25; //this is a value from 0 to 1
-float lowSpinB = -0.5;
-float highSpinB = 1.5;
+float difficulty=0.15; //this is a value from 0 to 1
+float lowSpinB = -5;
+float highSpinB = 5;
 
 
 void keyReleased(){
