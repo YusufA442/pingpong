@@ -1,6 +1,6 @@
 //import processing.sound.*;
 //SoundFile walltop,wallbottom,floor,bat;
-
+//testnote for github
 float ballX;     // Position of text along x-axis
 float ballY;     // Position of text along x-axis
 float brectX;
